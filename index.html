@@ -12,8 +12,8 @@
    <nav class="grid grid-cols-2 items-center bg-sky-950 text-white p-4">
     <h1 class="text-xl font-bold text-green-300">Crtl+Compras</h1>
         <ul class="flex justify-end space-x-6">
-            <li><a class="hover:text-green-300" href="#">Inicio</a></li>
-            <li><a class="hover:text-green-300" href="#">Productos</a></li>
+            <li><a class="hover:text-green-300" href="index.html">Inicio</a></li>
+            <li><a class="hover:text-green-300" href="Despliegue.html">Productos</a></li>
             <li><a class="hover:text-green-300" href="#Nosotros">Nosotros</a></li>
         </ul>
     </nav>
@@ -24,50 +24,57 @@
     </header>
 
 
-    <main class="p-10" >
-        <div>
-            <div class="border border-none bg-gray-100">
-                <h2 class=" bg-gray-200 text-xl font-light">Las mejores marcas</h2>
-                <div class="flex m-24 h-24  gap-5 justify-center mx-auto my-auto">
-                    <img src="img/LIPhone.jpg" class="border border-r-4 border-white cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110 ">
-                    <img src="img/LMoto.jpg" class="border border-r-4 border-white cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110">
-                    <img src="img/LSamsumg.jpg" class="border border-r-4 border-white cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110">
-                    <img src="img/LXiaomi.jpg" class="border-none border-r-4 border-white cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110">
-                </div>
+    <main class="p-6 md:p-10 bg-white text-gray-800">
+
+        <!-- Marcas destacadas -->
+        <section class="bg-gray-100 rounded-lg shadow mb-14 p-6">
+            <h2 class="bg-gray-200 text-xl font-light py-4 px-6 rounded-t-lg">Las mejores marcas</h2>
+            <div class="flex flex-wrap justify-evenly items-center gap-6 p-6">
+                <img src="img/LIPhone.jpg" class="w-24 h-24 object-contain border-2 border-white rounded cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110">
+                <img src="img/LMoto.jpg" class="w-24 h-24 object-contain border-2 border-white rounded cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110">
+                <img src="img/LSamsumg.jpg" class="w-24 h-24 object-contain border-2 border-white rounded cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110">
+                <img src="img/LXiaomi.jpg" class="w-24 h-24 object-contain border-2 border-white rounded cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110">
             </div>
-        </div>
-
-        <div class="flex justify-center mt-5">
-            <img src="img/promo.jpg" class="cursor-pointer">
-        </div>
-
-        <div class="mt-10">
-            <h2 class="bg-gray-200 text-xl font-light  py-4">Lo que quieres en los mejores precios</h2>
-            <div class="flex justify-center space-x-6 mt-3">
-                <div class="border border-gray-200 rounded-lg p-4">
-                    <div class="w-48 h-48 flex justify-center items-center mb-3">
+        </section>
+    
+        <!-- Imagen promocional -->
+        <section class="flex justify-center mb-14">
+            <img src="img/promo.jpg" alt="Promoción" class="max-w-full h-auto rounded shadow-lg cursor-pointer">
+        </section>
+    
+        <!-- Productos destacados -->
+        <section class="bg-gray-100 rounded-lg shadow">
+            <h2 class="bg-gray-200 text-xl font-light py-4 px-6 rounded-t-lg">Lo que quieres a los mejores precios</h2>
+            <div class="flex flex-wrap justify-around gap-6 p-6">
+                
+                <!-- Producto 1 -->
+                <div class="bg-white border border-gray-200 rounded-lg p-4 w-60 shadow hover:shadow-md transition">
+                    <div class="w-full h-48 flex justify-center items-center mb-3">
                         <img src="img/producto1.png" class="object-contain w-full h-full cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110">
                     </div>
-                    <p class="text-center text-xl font-semibold">$8,000MX</p>
+                    <p class="text-center text-xl font-semibold">$8,000 MX</p>
                 </div>
-                <div class="border border-gray-200 rounded-lg p-4">
-                    <div class="w-48 h-48 flex justify-center items-center mb-3">
+    
+                <!-- Producto 2 -->
+                <div class="bg-white border border-gray-200 rounded-lg p-4 w-60 shadow hover:shadow-md transition">
+                    <div class="w-full h-48 flex justify-center items-center mb-3">
                         <img src="img/producto2.png" class="object-contain w-full h-full cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110">
                     </div>
-                    <p class="text-center text-xl font-semibold">$8,000MX</p>
+                    <p class="text-center text-xl font-semibold">$8,000 MX</p>
                 </div>
-                <div class="border border-gray-200 rounded-lg p-4">
-                    <div class="w-48 h-48 flex justify-center items-center mb-3">
+    
+                <!-- Producto 3 -->
+                <div class="bg-white border border-gray-200 rounded-lg p-4 w-60 shadow hover:shadow-md transition">
+                    <div class="w-full h-48 flex justify-center items-center mb-3">
                         <img src="img/producto3.png" class="object-contain w-full h-full cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110">
                     </div>
-                    <p class="text-center text-xl font-semibold">$8,000MX</p>
+                    <p class="text-center text-xl font-semibold">$8,000 MX</p>
                 </div>
+    
             </div>
-        </div>
-        
-   
-        
+        </section>
     </main>
+    
 
 
            <!----
@@ -136,7 +143,7 @@
 
     ---->
     
-    <h2 class="text-center text-white text-xl bg-gray-500 p-4 font-bold" id="Nosotros">Nosotros</h2>
+    <h2 class="text-center text-white text-xl bg-gray-500 p-1 font-bold" id="Nosotros">Nosotros</h2>
     <footer class="bg-sky-950 p-8 flex justify-center">
         <div style="width: 800px; ">
             <div class="flex text-center justify-between">
