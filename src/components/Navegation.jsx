@@ -4,7 +4,7 @@ function Navegation() {
     <h1 className="text-2xl font-bold text-green-300 mt-2">Crtl+Compras</h1>
     <ul className="flex space-x-8 mt-2 text-white">
       <li><a className="hover:text-green-300" href="/">Inicio</a></li>
-      <li><a className="hover:text-green-300" href="">Productos</a></li>
+      <li><a className="hover:text-green-300" href="/productos">Productos</a></li>
       <li><a className="hover:text-green-300" href="/nosotros">Nosotros</a></li>
       <li><a className="hover:text-green-300" href="/login">Iniciar Sesión</a></li>
     </ul>
