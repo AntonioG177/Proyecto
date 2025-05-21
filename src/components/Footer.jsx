@@ -1,50 +1,28 @@
 function Footer(){
     return(
     <>
-    <footer className="bg-sky-950 p-10 flex justify-center h-[160px]">
-        <div style={{ width: 800 }}>
-        <div className="flex text-center justify-between">
-            <div className="">
-            <h2 className="font-bold text-green-300 text-sm md:text-xl">Nosotros</h2>
-            <p className="text-white">
-                Conoce más sobre nuestra historia y visión{" "}
-                <a href="#" className="hover:text-green-300">
-                ¡aquí!
-                </a>
-            </p>
+        <footer className="">
+            <div className="bg-gray-500 h-[20px]">
             </div>
-            <div className="">
-            <h2 className="font-bold text-green-300 text-sm md:text-xl">Contáctanos</h2>
-            <ul>
-                <li className="text-white hover:text-green-300 ">
-                <a href="#">Instagram</a>
-                </li>
-                <li className="text-white hover:text-green-300 ">
-                <a href="#">Faceboock</a>
-                </li>
-                <li className="text-white hover:text-green-300 ">
-                <a href="#" />
-                </li>
-            </ul>
+            <div className="grid gird-rows-3 md:grid-cols-3 md:place-content-center text-center bg-sky-900 p-4 h-full">
+                    <div className="">
+                        <h2 className="text-green-300 md:text-xl">Nuestra empresa</h2>
+                        <p className="text-white hover:text-green-400 cursor-pointer">Conoce sobre nuestra empresa aquí</p>
+                    </div>
+                    <div className="" > 
+                        <h2 className="text-green-400 md:text-xl">Contáctanos</h2>
+                        <ul className="text-white ">
+                            <li className="hover:text-green-300 cursor-pointer">Facebook</li>
+                            <li className="hover:text-green-300 cursor-pointer">Instragram</li>
+                        </ul>
+                    </div>
+                    <div className="">
+                        <h2 className="text-green-400 md:text-xl">Dejamos ayudarte</h2>
+                        <p className="text-white hover:text-green-300 cursor-pointer">Deja tus comentarios y dudas aquí</p>
+                    </div>
             </div>
-            <div className="">
-            <h2 className="font-bold text-green-300 text-sm md:text-xl">
-                Deja tus comentarios
-            </h2>
-            <p className="text-white">
-                Tu{" "}
-                <a
-                href="registro_comentarios.html"
-                className="hover:text-green-300"
-                >
-                comentario
-                </a>{" "}
-                es importante para nosotros.
-            </p>
-            </div>
-        </div>
-        </div>
-    </footer>
+        </footer>
+
     </>
 
     );
