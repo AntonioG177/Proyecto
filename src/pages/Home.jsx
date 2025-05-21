@@ -1,4 +1,5 @@
 import React from 'react'
+import ProductGrid from './ProductGrid'
 
 /*Imagenes */
 import Img1 from '../assets/promo.jpg'
@@ -57,31 +58,9 @@ function Home() {
       <div className='p-6'>
       <section className="bg-gray-100 rounded-lg shadow ">
             <h2 className="bg-gray-200 text-xl font-light py-4 px-6 rounded-t-lg">Lo que quieres a los mejores precios</h2>
-            <div className="flex flex-wrap justify-around gap-6 p-6">
+            <div className="flex flex-wrap justify-around gap-6 p-6 bg-white">
                 
-                
-                <div className="bg-white border border-gray-200 rounded-lg p-4 w-60 shadow hover:shadow-md transition">
-                    <div className="w-full h-48 flex justify-center items-center mb-3">
-                        <img src={ImgP1} class="object-contain w-full h-full cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110"/>
-                    </div>
-                    <p className="text-center text-xl font-semibold">$8,000 MX</p>
-                </div>
-    
-               
-                <div className="bg-white border border-gray-200 rounded-lg p-4 w-60 shadow hover:shadow-md transition">
-                    <div className="w-full h-48 flex justify-center items-center mb-3">
-                        <img src={ImgP2} class="object-contain w-full h-full cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110"/>
-                    </div>
-                    <p className="text-center text-xl font-semibold">$8,000 MX</p>
-                </div>
-    
-                
-                <div className="bg-white border border-gray-200 rounded-lg p-4 w-60 shadow hover:shadow-md transition">
-                    <div className="w-full h-48 flex justify-center items-center mb-3">
-                        <img src={ImgP3} class="object-contain w-full h-full cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110"/>
-                    </div>
-                    <p className="text-center text-xl font-semibold">$8,000 MX</p>
-                </div>
+            <ProductGrid/>
     
             </div>
       </section>
