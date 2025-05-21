@@ -8,6 +8,7 @@ import CrearProducto from './pages/crud/Frm_CrearProducto'
 import EditarProducto from './pages/crud/Frm_EditarProducto'
 import ListaProducto from './pages/crud/ListaProducto'
 import VerProducto from './pages/crud/VerProducto'
+import Productos from './pages/Productos'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path='/nosotros' element={<Nosotros/>}/>
           <Route path="/login" element={<Login/>} />
+          <Route path="/productos" element={<Productos/>} />
           <Route path="/crearProducto" element={<CrearProducto/>} />
           <Route path="/editarProducto" element={<EditarProducto/>} />
           <Route path="/listaProducto" element={<ListaProducto/>} />

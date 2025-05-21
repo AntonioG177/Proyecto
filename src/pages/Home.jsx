@@ -14,9 +14,9 @@ import ImgP3 from '../assets/producto3.png'
 function Home() {
   return (
     <>
-      <header className="bg-sky-700 text-center p-16 ">
+      <header className="bg-sky-700  text-center p-16 h-[300px] ">
         <h1 className="text-3xl text-white font-bold p-5 ">¡Bienvenido a Crtl+Compras!</h1>
-        <a className="bg-green-600 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-green-500" href="/login">Inicia Sesión</a>
+        <a className="bg-green-600 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-green-500 " href="/login">Inicia Sesión</a>
       </header>
     <div className='p-6'>
       <section className="bg-gray-100 rounded-lg shadow mb-14">

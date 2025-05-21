@@ -1,6 +1,6 @@
 function Login(){
     return(
-    <div class="container mx-auto px-4 z-10 relative flex-grow items-center mt-10 p-6">
+    <div class="container h-[550px] mx-auto px-4 z-10 relative flex-grow items-center mt-10  p-6">
         <div class="flex justify-center">
             <div class="w-full md:w-1/2 lg:w-1/3">
                 <div class="bg-gray-100 bg-opacity-90 backdrop-blur-sm rounded-lg shadow-xl overflow-hidden p-8">

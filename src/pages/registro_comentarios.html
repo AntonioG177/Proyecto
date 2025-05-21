@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <title>Registro Comentarios</title>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Barra de navegación -->
+    <nav class="grid grid-cols-2 items-center bg-sky-950 text-white p-4">
+        <h1 class="text-xl font-bold text-green-300">Crtl+Compras</h1>
+        <ul class="flex justify-end space-x-6">
+            <li><a class="hover:text-green-300" href="index.html">Inicio</a></li>
+            <li><a class="hover:text-green-300" href="Despliegue.html">Productos</a></li>
+            <li><a class="hover:text-green-300" href="#">Contactos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="flex-grow">
+        <section class="bg-sky-700 text-white">
+            <h1 class="text-2xl font-bold text-center p-7">Registrar Comentario</h1>
+        </section>
+
+        <div class="container ml-auto mr-auto flex items-center justify-center mt-3">
+            <div class="w-full max-w-md mx-auto">
+                <form class="space-y-4">
+                    <div class="mb-4">
+                        <label for="nombre" class="font-semibold text-gray-700 block">Nombre</label>
+                        <input type="text" class="w-full text-left border border-gray-300 px-4 py-1 rounded-md focus:outline-none focus:ring-2 focus:ring-green-300" id="nombre">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="apellidoPaterno" class="font-semibold text-gray-700">Apellido Paterno</label>
+                        <input type="text" class="w-full border border-gray-300 px-4 py-1 mb-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-300" id="apellidoPaterno">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="apellidoMaterno" class="font-semibold text-gray-700">Apellido Materno</label>
+                        <input type="text" class="w-full border border-gray-300 px-4 py-1 mb-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-300" id="apellidoMaterno">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="comentario" class="font-semibold text-gray-700">Comentario</label>
+                        <textarea type="text" class="w-full border border-gray-300 px-4 py-1 mb-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-300" id="comentario"></textarea>
+                    </div>
+
+                    <div class="flex justify-center gap-4 mt-3">
+                        <button type="submit" class="bg-red-500 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-red-400" onclick="window.location.href='ver_producto.html'">Regresar</button>
+                        <button type="submit" class="bg-blue-500 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-blue-400">Comentar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <br>
+
+    <!-- Footer -->
+    <h2 class="text-center text-white text-xl bg-gray-500 p-4 font-bold" id="Nosotros">Nosotros</h2>
+    <footer class="bg-sky-950 p-8 flex justify-center">
+        <div style="width: 800px; ">
+            <div class="flex text-center justify-between">
+                <div class="">
+                    <h2 class="font-bold text-green-300 text-xl">Nosotros</h2>
+                    <p class="text-white">Conoce más sobre nuestra historia y visión <a href="#" class="hover:text-green-300">¡aquí!</a></p>
+                </div>
+                <div class="">
+                    <h2 class="font-bold text-green-300 text-xl">Contáctanos</h2>
+                    <ul>
+                        <li class="text-white hover:text-green-300 "><a href="#">Instagram</a></li>
+                        <li class="text-white hover:text-green-300 "><a href="#">Faceboock</a></li>
+                        <li class="text-white hover:text-green-300 "><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h2 class="font-bold text-green-300 text-xl">Deja tus comentarios</h2>
+                    <p class="text-white">Tu <a href="registro_comentarios.html" class="hover:text-green-300">comentario</a> es importante para nosotros.</p>
+                </div>
+            </div>
+        </div>
+   </footer> 
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios de Clientes</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="grid grid-cols-2 items-center bg-sky-950 text-white p-4">
+        <h1 class="text-xl font-bold text-green-300">Crtl+Compras</h1>
+        <ul class="flex justify-end space-x-6">
+            <li><a class="hover:text-green-300" href="index.html">Inicio</a></li>
+            <li><a class="hover:text-green-300" href="Despliegue.html">Productos</a></li>
+            <li><a class="hover:text-green-300" href="#Nosotros">Nosotros</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="p-6 md:p-10 bg-white text-gray-800">
+        <!-- Sección de comentarios -->
+        <section class="bg-gray-100 rounded-lg shadow mb-14 p-6">
+            <h2 class="bg-gray-200 text-xl font-light py-4 px-6 rounded-t-lg">Opiniones de nuestros clientes</h2>
+            
+            <div class="grid gap-6 p-6">
+                <!-- Comentario 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                    <div class="flex items-start gap-4">
+                        <img src="img/avatar1.jpg" alt="Usuario" class="w-12 h-12 rounded-full object-cover">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2 mb-2">
+                                <h4 class="font-semibold text-blue-600">Juan Pérez</h4>
+                                <span class="text-sm text-gray-500">- 15 Enero 2024</span>
+                            </div>
+                            <p class="text-gray-700 mb-3">¡Excelente servicio! Los productos llegaron en perfecto estado y antes de lo esperado. Definitivamente volveré a comprar.</p>
+                            <div class="flex items-center gap-2 text-yellow-400">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comentario 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                    <div class="flex items-start gap-4">
+                        <img src="img/avatar2.jpg" alt="Usuario" class="w-12 h-12 rounded-full object-cover">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2 mb-2">
+                                <h4 class="font-semibold text-blue-600">María García</h4>
+                                <span class="text-sm text-gray-500">- 10 Enero 2024</span>
+                            </div>
+                            <p class="text-gray-700 mb-3">Buena relación calidad-precio. El soporte postventa fue muy útil para resolver mis dudas sobre la garantía.</p>
+                            <div class="flex items-center gap-2 text-yellow-400">
+                                ★★★★☆
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comentario 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                    <div class="flex items-start gap-4">
+                        <img src="img/avatar3.jpg" alt="Usuario" class="w-12 h-12 rounded-full object-cover">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2 mb-2">
+                                <h4 class="font-semibold text-blue-600">Carlos Rodríguez</h4>
+                                <span class="text-sm text-gray-500">- 5 Enero 2024</span>
+                            </div>
+                            <p class="text-gray-700 mb-3">Variedad de productos y opciones de pago flexibles. La entrega fue un poco demorada pero cumplieron con lo prometido.</p>
+                            <div class="flex items-center gap-2 text-yellow-400">
+                                ★★★★☆
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+    </main>
+
+    <!-- Sección Nosotros y Footer -->
+    <h2 class="text-center text-white text-xl bg-gray-500 p-1 font-bold" id="Nosotros">Nosotros</h2>
+    <footer class="bg-sky-950 p-8 flex justify-center">
+        <div style="width: 800px;">
+            <div class="flex text-center justify-between flex-wrap gap-6">
+                <div>
+                    <h2 class="font-bold text-green-300 text-xl">Nosotros</h2>
+                    <p class="text-white">Conoce más sobre nuestra historia y visión <a href="#" class="hover:text-green-300">¡aquí!</a></p>
+                </div>
+                <div>
+                    <h2 class="font-bold text-green-300 text-xl">Contáctanos</h2>
+                    <ul>
+                        <li class="text-white hover:text-green-300"><a href="#">Instagram</a></li>
+                        <li class="text-white hover:text-green-300"><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="font-bold text-green-300 text-xl">Deja tus comentarios</h2>
+                    <p class="text-white">Tu <a href="registro_comentarios.html" class="hover:text-green-300">comentario</a> es importante para nosotros.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
