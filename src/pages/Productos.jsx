@@ -1,6 +1,4 @@
-import producto1 from '../assets/producto1.png'
-import producto2 from '../assets/producto2.png'
-import producto3 from '../assets/producto3.png'
+
 import ProductGrid from './ProductGrid'
 
 

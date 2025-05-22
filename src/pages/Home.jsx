@@ -7,9 +7,6 @@ import Img2 from '../assets/LMoto.jpg'
 import Img3 from '../assets/LSamsumg.jpg'
 import Img4 from '../assets/LXiaomi.jpg'
 import Img5 from '../assets/LPhone.jpg'
-import ImgP1 from '../assets/producto1.png'
-import ImgP2 from '../assets/producto2.png'
-import ImgP3 from '../assets/producto3.png'
 
 
 function Home() {

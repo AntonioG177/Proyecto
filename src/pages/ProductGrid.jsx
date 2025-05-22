@@ -1,6 +1,8 @@
 //...Importa UseState
 import {useState, useEffect} from "react";
-import Card from "../Card";
+
+import Card from "../components/Cad";
+
 
 function ProductGrid(){
     const [products, setProducts] = useState([]);
@@ -11,7 +13,9 @@ function ProductGrid(){
         }, []);
     
       return(
-          <div key="product-grid" className="grid grid-cols-4 place-items-stretch gap-4 p-8 ">      
+
+          <div key="product-grid" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 ">      
+
           {products.map(e=><Card key={e.id} title={e.title} paragraph={e.description} image={e.image} model={e.price}/>)}
           </div>
       );
