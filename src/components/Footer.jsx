@@ -14,6 +14,7 @@ function Footer(){
                         <ul className="text-white ">
                             <li className="hover:text-green-300 cursor-pointer">Facebook</li>
                             <li className="hover:text-green-300 cursor-pointer">Instragram</li>
+                            <li className="hover:text-green-300 cursor-pointer">X</li>
                         </ul>
                     </div>
                     <div className="">

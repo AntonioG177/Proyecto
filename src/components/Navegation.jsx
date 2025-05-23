@@ -1,4 +1,5 @@
 function Navegation() {
+  const role = localStorage.getItem('role')
   return (
     <nav className="flex flex-wrap items-center justify-between bg-sky-900 p-4">
     <h1 className="text-center text-2xl font-bold text-green-300 mt-2">Crtl+Compras</h1>
@@ -7,6 +8,9 @@ function Navegation() {
       <li><a className="hover:text-green-300" href="/productos">Productos</a></li>
       <li><a className="hover:text-green-300" href="/nosotros">Nosotros</a></li>
       <li><a className="hover:text-green-300" href="/login">Iniciar Sesión</a></li>
+
+     
+
     </ul>
   </nav>
 
