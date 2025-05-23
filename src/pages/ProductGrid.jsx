@@ -1,7 +1,7 @@
 //...Importa UseState
 import {useState, useEffect} from "react";
 
-import Card from "../components/Cad";
+import Card from "../components/Card";
 
 
 function ProductGrid(){

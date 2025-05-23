@@ -6,7 +6,7 @@ function VerProducto(){
     </section>
 
     <div class="flex justify-center gap-4 mt-5 ">
-        <div class="box-border size-130 border p-4 rounded-lg shadow-lg bg-white" >
+        <div class=" size-130 border p-4 rounded-lg shadow-xl bg-gray-50 border-gray-50 " >
           <div class="p-4">
             <div class="text-xl font-bold text-gray-800">
               <h5 class="text-gray-800 mb-4 text-center">Producto</h5>
@@ -24,7 +24,7 @@ function VerProducto(){
         </div>     
       </div>
       <div class="flex justify-center gap-4 mt-4">
-        <button type="submit" class=" bg-gray-500 px-3 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-gray-400"  onclick="window.location.href='lista_producto.html'">Regresar</button>
+       <a type="submit" className="bg-green-700 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-green-600 " href="/admin/lista">Regresar</a>
       </div>
         
         

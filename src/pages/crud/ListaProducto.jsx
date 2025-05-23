@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function ListaProducto(){
     return(
     <>
@@ -7,7 +9,14 @@ function ListaProducto(){
         <input class="border border-gray-300 px-1 py-1 mb-2 rounded-md focus:outline-none focus:ring-2 text-black" type="search" placeholder="Buscar" aria-label="Buscar"/>
         <button class="bg-blue-500 rounded-md py-2 px-5 cursor-pointer  hover:bg-blue-400">Buscar</button>
     </form>
-        <button class="bg-gray-500 rounded-md px-2 py-1 text-sm text-white cursor-pointer hover:bg-gray-400 col-end-7 transition duration-150 ease-in-out"  type="submit"  onclick="window.location.href='crear_producto.html'">Agregar</button>
+        <div className="bg-gray-500 rounded-md px-2 py-1 sm:text-sm text-center  text-white cursor-pointer hover:bg-gray-400 col-end-7">
+            <Link
+                to="/admin/crear" 
+                className="text-xl block w-full h-full font-semibold"
+            >
+                Agregar
+            </Link>
+        </div>
     </div>
     
     
@@ -30,10 +39,22 @@ function ListaProducto(){
             <td class="border border-gray-300" >Otto</td>
             <td class="border border-gray-300">@mdo</td>
             <td class="border border-gray-300" >@dfasdf</td>
-            <td class="border border-gray-300">
-                <button class="bg-blue-500 px-3 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-blue-400" type="button" onclick="window.location.href='editar_producto.html'">Editar</button>
-                <button class="bg-red-500 px-3 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-red-400" type="button">Eliminar</button>
-                <button class="bg-gray-500 px-3 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-gray-400"  type="button" onclick="window.location.href='detalle_producto.html'">Detalle</button>
+            <td class="border border-gray-300 p-4">
+                <div  className="flex flex-wrap gap-1">
+
+                <Link to="/admin/editar" 
+                    className="bg-blue-500 px-3 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-blue-400">
+                    Editar
+                </Link>
+                <Link to="/admin/editar" 
+                    className="bg-red-500 px-3 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-red-400">
+                    Eliminar
+                </Link>
+                <Link to="/admin/ver" 
+                    className="bg-gray-500 px-3 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-gray-400">
+                    Detalle
+                </Link>
+                </div>
             </td>
             </tr>
         </tbody>

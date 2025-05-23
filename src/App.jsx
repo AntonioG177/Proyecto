@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Navegation from './components/Navegation'
 import Home from './pages/Home'
 import Nosotros from './pages/Nosotros'
@@ -10,6 +10,15 @@ import ListaProducto from './pages/crud/ListaProducto'
 import VerProducto from './pages/crud/VerProducto'
 import Productos from './pages/Productos'
 
+
+const isAdmin = () => localStorage.getItem('role') === 'admin'
+
+const ProtectedRoute = ({ children }) => {
+  return isAdmin() ? children : <Navigate to="/login" />
+}
+
+  
+
 function App() {
   return (
     <>
@@ -20,13 +29,15 @@ function App() {
           <Route path='/nosotros' element={<Nosotros/>}/>
           <Route path="/login" element={<Login/>} />
           <Route path="/productos" element={<Productos/>} />
-          <Route path="/crearProducto" element={<CrearProducto/>} />
-          <Route path="/editarProducto" element={<EditarProducto/>} />
-          <Route path="/listaProducto" element={<ListaProducto/>} />
-          <Route path="/verProducto" element={<VerProducto/>} />
+
+          <Route path="/admin/crear" element={<ProtectedRoute><CrearProducto /></ProtectedRoute>} />
+          <Route path="/admin/editar" element={<ProtectedRoute><EditarProducto /></ProtectedRoute>} />
+          <Route path="/admin/lista" element={<ProtectedRoute><ListaProducto /></ProtectedRoute>} />
+          <Route path="/admin/ver" element={<ProtectedRoute><VerProducto /></ProtectedRoute>} />
         </Routes>
       </main>
       <Footer/>
+
     </>
   )
 }
