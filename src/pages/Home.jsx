@@ -3,7 +3,7 @@ import ProductGrid from './ProductGrid'
 
 /*Imagenes */
 import Img1 from '../assets/promo.jpg'
-import Img2 from '../assets/LMoto.jpg'
+import Img2 from '../assets/LChanel.jpg'
 import Img3 from '../assets/LSamsumg.jpg'
 import Img4 from '../assets/LXiaomi.jpg'
 import Img5 from '../assets/LPhone.jpg'
