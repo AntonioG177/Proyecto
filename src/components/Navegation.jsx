@@ -11,7 +11,9 @@ function Navegation() {
           <li><a href="/" className="hover:text-green-300">Inicio</a></li>
           <li> <a href="/productos" className="hover:text-green-300">Productos</a></li>
           <li><a href="/nosotros" className="hover:text-green-300">Nosotros</a></li>
+          <li> <a href="/contactanos" className="hover:text-green-300">Contáctanos</a></li>
           <li> <a href="/login" className="hover:text-green-300">Iniciar Sesión</a></li>
+
             
            
           </>
@@ -19,6 +21,7 @@ function Navegation() {
 
         {role === 'admin' && (
           <>
+            <a href="/" className="hover:text-green-300">Inicio</a>
             <a href="/admin/lista" className="hover:text-green-300">Lista Productos</a>
             <a href="/admin/crear" className="hover:text-green-300">Crear Producto</a>
           </>
