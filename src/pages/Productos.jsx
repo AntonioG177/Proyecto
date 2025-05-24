@@ -11,6 +11,7 @@ function Productos(){
                 <h1 className='text-4xl text-sky-800'>Nuestros Productos</h1>
 
                <ProductGrid/>
+              
             </div>
         </div>
     </main>  

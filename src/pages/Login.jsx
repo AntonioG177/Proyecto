@@ -55,7 +55,7 @@ function Login() {
               <div className="mb-4 mt-2">
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition duration-200"
+                  className="w-full bg-green-700 hover:bg-green-600 cursor-pointer text-white font-medium py-2 px-4 rounded-md transition duration-200"
                 >
                   Ingresar
                 </button>

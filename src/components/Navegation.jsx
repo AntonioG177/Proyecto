@@ -9,8 +9,8 @@ function Navegation() {
       {role !== 'admin' && (
           <>
           <li><a href="/" className="hover:text-green-300">Inicio</a></li>
-          <li><a href="/nosotros" className="hover:text-green-300">Nosotros</a></li>
           <li> <a href="/productos" className="hover:text-green-300">Productos</a></li>
+          <li><a href="/nosotros" className="hover:text-green-300">Nosotros</a></li>
           <li> <a href="/login" className="hover:text-green-300">Iniciar Sesión</a></li>
             
            
