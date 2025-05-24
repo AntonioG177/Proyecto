@@ -10,16 +10,16 @@ function Footer(){
                         <p className="text-white hover:text-green-400 cursor-pointer">Conoce sobre nuestra empresa aquí</p>
                     </div>
                     <div className="" > 
-                        <h2 className="text-green-400 md:text-xl">Contáctanos</h2>
+                        <h2 className="text-green-300 md:text-xl">Contáctanos</h2>
                         <ul className="text-white ">
-                            <li className="hover:text-green-300 cursor-pointer">Facebook</li>
-                            <li className="hover:text-green-300 cursor-pointer">Instragram</li>
-                            <li className="hover:text-green-300 cursor-pointer">X</li>
+                            <li className="hover:text-green-400 cursor-pointer">Facebook</li>
+                            <li className="hover:text-green-400 cursor-pointer">Instragram</li>
+                            <li className="hover:text-green-400 cursor-pointer">X</li>
                         </ul>
                     </div>
                     <div className="">
-                        <h2 className="text-green-400 md:text-xl">Dejamos ayudarte</h2>
-                        <p className="text-white hover:text-green-300 cursor-pointer">Deja tus comentarios y dudas aquí</p>
+                        <h2 className="text-green-300 md:text-xl">Dejamos ayudarte</h2>
+                        <p className="text-white hover:text-green-400 cursor-pointer">Deja tus comentarios y dudas aquí</p>
                     </div>
             </div>
         </footer>

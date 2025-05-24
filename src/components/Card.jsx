@@ -3,7 +3,7 @@
 function Card(props){
 return (
 
-<div className="grid grid-cols-1  border  border-gray-400 rounded-lg bg-white dark:border-blue-400 dark:bg-blue-400 p-3 ">
+<div className="grid grid-cols-1  border  border-gray-400 rounded-lg bg-white shadow-gray-200 shadow-2xl dark:border-blue-400 dark:bg-blue-400 p-3 ">
     <img className="h-40 object-contain mx-auto mb-4" src={props.image?props.image:imgDefault} alt="" />
     <div className="">
         <h5 className="font-semibold  text-center dark:hover:text-white">{props.title?props.title:'Title'}</h5>

@@ -12,7 +12,7 @@ function ListaProducto(){
         <div className="bg-gray-500 rounded-md px-2 py-1 sm:text-sm text-center  text-white cursor-pointer hover:bg-gray-400 col-end-7">
             <Link
                 to="/admin/crear" 
-                className="text-xl block w-full h-full font-semibold"
+                className="md:text-xl text-sm  md:w-full md:h-full md:font-semibold "
             >
                 Agregar
             </Link>
@@ -20,7 +20,7 @@ function ListaProducto(){
     </div>
     
     
-    <div class="p-4">
+    <div class="md:p-4 p-5">
         <table class=" table-fixed border-collapse border border-gray-400 w-full p-8">
         <thead>
             <tr>

@@ -7,6 +7,7 @@ import Img2 from '../assets/LChanel.jpg'
 import Img3 from '../assets/LSamsumg.jpg'
 import Img4 from '../assets/LXiaomi.jpg'
 import Img5 from '../assets/LPhone.jpg'
+import Img6 from '../assets/Rolex.jpg'
 
 
 function Home() {
@@ -37,6 +38,11 @@ function Home() {
           />
           <img
             src={Img5}
+            alt="Marca 4"
+            className="w-24 h-24 object-contain  rounded cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110"
+          />
+          <img
+            src={Img6}
             alt="Marca 4"
             className="w-24 h-24 object-contain  rounded cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110"
           />
