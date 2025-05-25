@@ -10,6 +10,8 @@ import ListaProducto from './pages/crud/ListaProducto'
 import VerProducto from './pages/crud/VerProducto'
 import Productos from './pages/Productos'
 import Contactanos from './pages/Contactanos'
+import VerProductoCliente from './pages/VerProductoCliente'
+import RegistroComentarios from './pages/RegistroComentarios'
 
 
 const isAdmin = () => localStorage.getItem('role') === 'admin'
@@ -31,6 +33,9 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/productos" element={<Productos/>} />
           <Route path="/contactanos" element={<Contactanos/>} />
+          <Route path="/ver-producto/:id" element={<VerProductoCliente />} />
+          <Route path="/comentarios" element={<RegistroComentarios />} />
+
 
           <Route path="/admin/crear" element={<ProtectedRoute><CrearProducto /></ProtectedRoute>} />
           <Route path="/admin/editar" element={<ProtectedRoute><EditarProducto /></ProtectedRoute>} />

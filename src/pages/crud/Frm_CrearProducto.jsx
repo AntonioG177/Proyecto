@@ -15,28 +15,27 @@ function CrearProducto(){
                 </div>
             </div>
              <div className="mb-4 ">
-                <label for="nombre" className="font-semibold text-gray-700">Cantidad</label>
+                <label for="cantidad" className="font-semibold text-gray-700">Cantidad</label>
                 <div className="mt-3">
-                     <input type="text" className=" border border-gray-700  rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 w-[380px]  p-2" id="nombre"/>
+                     <input type="text" className=" border border-gray-700  rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 w-[380px]  p-2" id="cantidad"/>
                 </div>
             </div>
              <div className="mb-4 ">
-                <label for="nombre" className="font-semibold text-gray-700">Precio</label>
+                <label for="precio" className="font-semibold text-gray-700">Precio</label>
                 <div className="mt-3">
-                     <input type="text" className=" border border-gray-700  rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 w-[380px]  p-2" id="nombre"/>
+                     <input type="text" className=" border border-gray-700  rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 w-[380px]  p-2" id="precio"/>
                 </div>
             </div>
              <div className="mb-4 ">
-                <label for="nombre" className="font-semibold text-gray-700">Marca</label>
+                <label for="descripcion" className="font-semibold text-gray-700">Descripcion</label>
                 <div className="mt-3">
-                     <input type="text" className=" border border-gray-700  rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 w-[380px]  p-2" id="nombre"/>
+                     <textarea type="text" className=" border border-gray-700  rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 w-[380px]  p-2" id="descripcion"/>
                 </div>
             </div>
              
             <div class="flex justify-center space-x-3 gap-4 mt-4">
                 <button type="submit" className="bg-blue-500 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-blue-400">Enviar</button>
-                <button type="submit" className="bg-red-500 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-red-400 " onclick="window.location.href='lista_producto.html' ">Cancelar</button>
-                <a type="submit" className="bg-green-700 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-green-600 " href="/admin/lista">Regresar</a>
+                <a type="submit" className="bg-red-500 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-red-400 " href="/admin/lista">Cancelar</a>
             </div>
             </form>
         </div>
