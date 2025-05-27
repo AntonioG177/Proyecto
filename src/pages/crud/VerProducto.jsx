@@ -26,9 +26,7 @@ function VerProducto(){
       <div class="flex justify-center gap-4 mt-4">
        <a type="submit" className="bg-green-700 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-green-600 " href="/admin/lista">Regresar</a>
       </div>
-        
-        
-        
+
         </>
     );
 }
