@@ -46,7 +46,6 @@ function CrearProducto(){
             <div class="flex justify-center space-x-3 gap-4 mt-4">
                 <button type="submit" className="bg-blue-500 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-blue-400">Agregar</button>
                 <a type="submit" className="bg-red-500 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-red-400 " href="/admin/lista">Cancelar</a>
-                 <a type="submit" className="bg-green-700 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-green-600 " href="/admin/lista">Regresar</a>
             </div>
             </form>
         </div>
