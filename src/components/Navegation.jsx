@@ -6,7 +6,7 @@ function Navegation() {
   return (
     <nav className="flex flex-wrap items-center justify-between p-4 top-0 z-50 bg-sky-700 p-4 shadow-md">
     <div className="flex items-center ml-20">
-      <a href='/'><img src={Img1} alt="LOGO" className="w-24 h-20 object-contain"/></a>
+      <a href='/'><img src={Img1} alt="LOGO" className="w-10 h-10 object-contain"/></a>
       <a href='/'><h1 className="text-center text-2xl font-bold text-green-300 ">Crtl + <br/> Compras</h1></a>
     </div>
     <ul className="flex flex-wrap space-x-8 mt-2 text-white">
