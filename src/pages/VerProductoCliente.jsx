@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Img1 from '/img/Avatar1.jpg'
 import Img2 from '/img/Avatar2.jpg'
 import Img3 from '/img/Avatar3.jpg'
+import Img4 from '/img/Teddy.jpg'
 
 
 
@@ -62,7 +63,7 @@ function VerProductoCliente() {
 
                    {/* Botones de Regresar, Agregar a carrito, Comentar */}
                   <div className="flex space-x-5 mt-20 mb-4 justify-center">
-                    <a href="/" className=" bg-sky-800 text-white text-center  rounded-md  cursor-pointer hover:bg-sky-700 dark:bg-green-600 dark:focus:ring-blue-800 dark:hover:bg-blue-500 dark:hover:text-white p-2 ">Regresar</a>
+                    <a onClick={() => window.history.back()} className=" bg-sky-800 text-white text-center  rounded-md  cursor-pointer hover:bg-sky-700 dark:bg-green-600 dark:focus:ring-blue-800 dark:hover:bg-blue-500 dark:hover:text-white p-2 ">Regresar</a>
                     <a href="" className="bg-orange-800 text-white text-center  rounded-md  cursor-pointer hover:bg-orange-700 dark:bg-blue-600 dark:focus:ring-orange-800 dark:hover:bg-orange-500 dark:hover:text-white p-2">Agregar a Carrito</a>
                     <a href="/comentarios" className="bg-green-800 text-white text-center  rounded-md  cursor-pointer hover:bg-green-700 dark:bg-sky-600 dark:focus:ring-orange-800 dark:hover:bg-green-500 dark:hover:text-white p-2">Comentar</a>
 
@@ -129,6 +130,21 @@ function VerProductoCliente() {
                               <p class="text-gray-700 mb-3">Variedad de productos y opciones de pago flexibles. La entrega fue un poco demorada pero cumplieron con lo prometido.</p>
                               <div class="flex items-center gap-2 text-yellow-400">
                                   ★★★★☆
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="bg-blue-50 rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                      <div class="flex items-start gap-4">
+                          <img src={ Img4 } alt="Usuario" class="w-12 h-12 rounded-full object-cover"/>
+                          <div class="flex-1">
+                              <div class="flex items-center gap-2 mb-2">
+                                  <h4 class="font-semibold text-blue-600">Teddy</h4>
+                                  <span class="text-sm text-gray-500">- 12 Diciembre 2024</span>
+                              </div>
+                              <p class="text-gray-700 mb-3"> Mal producto, no me gusto.</p>
+                              <div class="flex items-center gap-2 text-yellow-400">
+                                  ★☆☆☆☆
                               </div>
                           </div>
                       </div>
