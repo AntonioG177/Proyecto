@@ -4,7 +4,7 @@ function Navegation() {
   return (
     <nav className="flex flex-wrap items-center justify-between bg-sky-900 p-4">
     <h1 className="text-center text-2xl font-bold text-green-300 mt-2">Crtl+Compras</h1>
-    <ul className="flex space-x-8 mt-2 text-white">
+    <ul className="flex flex-wrap space-x-8 mt-2 text-white">
  
       {role !== 'admin' && (
           <>

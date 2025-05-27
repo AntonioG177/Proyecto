@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 function Login() {
   const [usuario, setUsuario] = useState('')
@@ -19,7 +19,7 @@ function Login() {
   }
 
   return (
-    <div className="container h-[550px] mx-auto px-4 z-10 relative flex-grow items-center mt-10 p-6">
+    <div className="container h-[550px] mx-auto px-4 z-10 relative flex-grow items-center mt-10 p-">
       <div className="flex justify-center">
         <div className="w-full md:w-1/2 lg:w-1/3">
           <div className="bg-gray-100 bg-opacity-90 backdrop-blur-sm rounded-lg shadow-xl overflow-hidden p-8">
@@ -49,20 +49,21 @@ function Login() {
               </div>
               <div className='text-center text-sky-800'>
                 <p>¿Eres usuario nuevo?</p>
-                <a className='hover:text-green-700 cursor-pointer'>Registrate</a>
+                  <a className='hover:text-green-700 cursor-pointer' href='registrar-usuario'>Registrate</a>
+              
               </div>
 
               <div className="mb-4 mt-2">
                 <button
                   type="submit"
-                  className="w-full bg-green-700 hover:bg-green-600 cursor-pointer text-white font-medium py-2 px-4 rounded-md transition duration-200"
+                  className="w-full bg-sky-700 hover:bg-sky-600 cursor-pointer text-white font-medium py-2 px-4 rounded-md transition duration-200"
                 >
                   Ingresar
                 </button>
               </div>
 
               <div className="text-center space-y-2">
-                <span className="text-sm text-gray-600">Tip: escribe <strong>admin</strong> para ver el CRUD.</span>
+                
               </div>
             </form>
           </div>

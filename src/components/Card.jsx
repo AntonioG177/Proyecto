@@ -19,7 +19,7 @@ return (
 
     {/* Botones de agregar carrito y ver producto */}
     <div className="flex space-x-3 mt-4 justify-center">
-        <a onClick={() => verProducto(props.id)} className=" bg-blue-800 text-white text-center  rounded-lg  cursor-pointer hover:bg-green-700 dark:bg-blue-600 dark:focus:ring-blue-800 dark:hover:bg-blue-500 dark:hover:text-white p-2 ">
+        <a onClick={() => verProducto(props.id)} className=" bg-sky-800 text-white text-center  rounded-lg  cursor-pointer hover:bg-sky-700 dark:bg-blue-600 dark:focus:ring-blue-800 dark:hover:bg-blue-500 dark:hover:text-white p-2 ">
                 Ver producto
         </a>
         <a href={props.productRef?props.productRef:'#'} className=" bg-orange-800 text-white text-center  rounded-lg  cursor-pointer hover:bg-orange-700 dark:bg-orange-600 dark:focus:ring-orange-800 dark:hover:bg-orange-500 dark:hover:text-white p-2">

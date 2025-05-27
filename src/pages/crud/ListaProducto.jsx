@@ -21,7 +21,7 @@ function ListaProducto() {
           <button className="bg-blue-500 rounded-md py-2 px-5 cursor-pointer hover:bg-blue-400">Buscar</button>
         </form>
         <div className="bg-gray-500 rounded-md px-2 py-1 sm:text-sm text-center text-white cursor-pointer hover:bg-gray-400 col-end-7">
-          <a href="/admin/crear" className="md:text-xl text-sm md:w-full md:h-full md:font-semibold">Agregar</a>
+          <Link to="/admin/crear" className="md:text-xl text-sm md:w-full md:h-full md:font-semibold">Agregar</Link>
         </div>
       </div>
 

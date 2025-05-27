@@ -2,21 +2,29 @@ import React from 'react'
 import ProductGrid from './ProductGrid'
 
 /*Imagenes */
-import Img1 from '../assets/promo.jpg'
-import Img2 from '../assets/LChanel.jpg'
-import Img3 from '../assets/LSamsumg.jpg'
-import Img4 from '../assets/LXiaomi.jpg'
-import Img5 from '../assets/LPhone.jpg'
-import Img6 from '../assets/Rolex.jpg'
 
+import Img1 from '/img/promo.jpg'
+import Img2 from '/img/LChanel.jpg' 
+import Img3 from '/img/LSamsumg.jpg'
+import Img4 from '/img/LXiaomi.jpg'
+import Img5 from '/img/LPhone.jpg'
+import Img6 from '/img/Rolex.jpg'
 
 function Home() {
   return (
     <>
-      <header className="bg-sky-700  text-center p-16 h-[300px] ">
-        <h1 className="text-3xl text-white font-bold p-5 ">¡Bienvenido a Crtl+Compras!</h1>
-        <a className="bg-green-600 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-green-500 " href="/login">Inicia Sesión</a>
-      </header>
+    <header className="relative bg-[url('/img/Fondo.jpg')] bg-cover bg-center bg-no-repeat text-center py-24 md:py-36 lg:py-48 px-4">
+      <div className="absolute inset-0 bg-[rgba(30,59,138,0.57)]"></div>
+      <div className="relative z-10 flex flex-col items-center justify-center text-center max-w-6xl mx-auto">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl text-white font-bold p-4 sm:p-5">
+          ¡Bienvenido a Crtl+Compras!
+        </h1>
+        <a className="bg-green-600 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-green-500 transition-colors duration-200 text-sm sm:text-base" 
+          href="/login">
+          Inicia Sesión
+        </a>
+      </div>
+    </header>
     <div className='p-6'>
       <section className="bg-gray-100 rounded-lg shadow mb-14">
         <h2 className="bg-gray-200 text-xl font-light py-4 px-6 rounded-t-lg">Las mejores marcas</h2>
