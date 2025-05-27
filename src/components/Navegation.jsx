@@ -4,7 +4,7 @@ function Navegation() {
   const role = localStorage.getItem('role')
 
   return (
-    <nav className="flex flex-wrap items-center justify-between bg-sky-900 p-4 top-0 z-50 bg-sky-900 p-4 shadow-md">
+    <nav className="flex flex-wrap items-center justify-between p-4 top-0 z-50 bg-sky-700 p-4 shadow-md">
     <div className="flex items-center ml-20">
       <a href='/'><img src={Img1} alt="LOGO" className="w-24 h-20 object-contain"/></a>
       <a href='/'><h1 className="text-center text-2xl font-bold text-green-300 ">Crtl + <br/> Compras</h1></a>
@@ -29,6 +29,8 @@ function Navegation() {
             <a href="/" className="hover:text-green-300">Inicio</a>
             <a href="/admin/lista" className="hover:text-green-300">Lista Productos</a>
             <a href="/admin/crear" className="hover:text-green-300">Crear Producto</a>
+            <li> <a href="/nosotros" className="hover:text-green-300">Nosotros</a></li>
+            <li> <a href="/contactanos" className="hover:text-green-300">Contáctanos</a></li>
           </>
         )}
 

@@ -7,7 +7,6 @@ import Login from './pages/Login'
 import CrearProducto from './pages/crud/Frm_CrearProducto'
 import EditarProducto from './pages/crud/Frm_EditarProducto'
 import ListaProducto from './pages/crud/ListaProducto'
-import VerProducto from './pages/crud/VerProducto'
 import Productos from './pages/Productos'
 import Contactanos from './pages/Contactanos'
 import VerProductoCliente from './pages/VerProductoCliente'
@@ -44,7 +43,6 @@ function App() {
           <Route path="/admin/crear" element={<ProtectedRoute><CrearProducto /></ProtectedRoute>} />
           <Route path="/admin/editar" element={<ProtectedRoute><EditarProducto /></ProtectedRoute>} />
           <Route path="/admin/lista" element={<ProtectedRoute><ListaProducto /></ProtectedRoute>} />
-          <Route path="/admin/ver" element={<ProtectedRoute><VerProducto /></ProtectedRoute>} />
           
         </Routes>
       </main>
