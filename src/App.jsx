@@ -12,6 +12,7 @@ import Productos from './pages/Productos'
 import Contactanos from './pages/Contactanos'
 import VerProductoCliente from './pages/VerProductoCliente'
 import RegistroComentarios from './pages/RegistroComentarios'
+import RegistrarUsuario from './pages/RegistrarUsuario'
 
 
 const isAdmin = () => localStorage.getItem('role') === 'admin'
@@ -26,7 +27,7 @@ function App() {
   return (
     <>
       <Navegation />
-      <main className=''>
+      <main className='min-h-screen'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/nosotros' element={<Nosotros/>}/>
@@ -35,12 +36,16 @@ function App() {
           <Route path="/contactanos" element={<Contactanos/>} />
           <Route path="/ver-producto/:id" element={<VerProductoCliente />} />
           <Route path="/comentarios" element={<RegistroComentarios />} />
+          <Route path="/registrar-usuario" element={<RegistrarUsuario />} />
+          
+          {/* Rutas protegidas para el CRUD de productos */}
 
 
           <Route path="/admin/crear" element={<ProtectedRoute><CrearProducto /></ProtectedRoute>} />
           <Route path="/admin/editar" element={<ProtectedRoute><EditarProducto /></ProtectedRoute>} />
           <Route path="/admin/lista" element={<ProtectedRoute><ListaProducto /></ProtectedRoute>} />
           <Route path="/admin/ver" element={<ProtectedRoute><VerProducto /></ProtectedRoute>} />
+          
         </Routes>
       </main>
       <Footer/>

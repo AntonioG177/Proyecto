@@ -6,39 +6,54 @@ function Contactanos (){
             <h1 className="text-2xl font-bold  text-center p-7">Contáctanos</h1>
         </section>
 
-        <div className="flex flex-wrap p-10">
-            <div className="w-full max-w-md mx-auto">
-            <form className="space-y-4 p-10 border border-gray-50  shadow-2xl rounded-md bg-gray-50">
-                <div className="mb-4 ">
-                    <label for="nombre" className="font-semibold text-gray-700">Nombre</label>
-                    <div className="mt-3">
-                        <input type="text" className=" border border-gray-700  rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 w-[380px] p-2" id="nombre"/>
-                    </div>
-                </div>
-                <div className="mb-4 ">
-                    <label for="apellido" className="font-semibold text-gray-700">Apellido</label>
-                    <div className="mt-3">
-                        <input type="text" className=" border border-gray-700  rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 w-[380px]  p-2" id="apellido"/>
-                    </div>
-                </div>
-                <div className="mb-4 ">
-                    <label for="correo" className="font-semibold text-gray-700">Correo</label>
-                    <div className="mt-3">
-                        <input type="text" className=" border border-gray-700  rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 w-[380px]  p-2" id="correo"/>
-                    </div>
-                </div>
-                <div className="mb-4 ">
-                    <label for="dudaSug" className="font-semibold text-gray-700">Duda / Sugerencia</label>
-                    <div className="mt-3">
-                        <textarea type="text" className=" border border-gray-700  rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 w-[380px]  p-2" id="dudaSug"/>
-                    </div>
-                </div>
-                
-                <div class="flex justify-center space-x-3 gap-4 mt-4">
-                    <button type="submit" className="bg-blue-500 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-blue-400">Enviar</button>
-                </div>
-                </form>
+        <div className="flex items-center justify-center p-4 sm:p-6 md:p-8 lg:p-10  bg-gray-100">
+        <div className="w-full max-w-md mx-auto">
+            <form className="space-y-4 p-6 sm:p-8 md:p-10 border border-gray-200 shadow-xl rounded-lg bg-white">
+            <div className="mb-4">
+                <label htmlFor="nombre" className="block font-semibold text-gray-700 mb-1">Nombre</label>
+                <input 
+                type="text" 
+                className="w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 p-2 sm:p-3"
+                id="nombre"
+                />
             </div>
+
+            <div className="mb-4">
+                <label htmlFor="apellido" className="block font-semibold text-gray-700 mb-1">Apellido</label>
+                <input 
+                type="text" 
+                className="w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 p-2 sm:p-3"
+                id="apellido"
+                />
+            </div>
+
+            <div className="mb-4">
+                <label htmlFor="correo" className="block font-semibold text-gray-700 mb-1">Correo</label>
+                <input 
+                type="email" 
+                className="w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 p-2 sm:p-3"
+                id="correo"
+                />
+            </div>
+
+            <div className="mb-4">
+                <label htmlFor="dudaSug" className="block font-semibold text-gray-700 mb-1">Duda / Sugerencia</label>
+                <textarea 
+                className="w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 p-2 sm:p-3 min-h-[120px]"
+                id="dudaSug"
+                />
+            </div>
+            
+            <div className="flex justify-center mt-6">
+                <button 
+                type="submit" 
+                className="bg-blue-500 hover:bg-blue-600 px-6 py-2 sm:px-8 sm:py-3 text-white rounded-md cursor-pointer transition-colors duration-200 shadow-md"
+                >
+                Enviar
+                </button>
+            </div>
+            </form>
+        </div>
         </div>
         </>
   )

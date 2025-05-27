@@ -2,9 +2,12 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 /*Imagenes */
-import Img1 from '../assets/Avatar1.jpg'
-import Img2 from '../assets/Avatar2.jpg'
-import Img3 from '../assets/Avatar3.jpg'
+import Img1 from '/img/Avatar1.jpg'
+import Img2 from '/img/Avatar2.jpg'
+import Img3 from '/img/Avatar3.jpg'
+
+
+
 
 function VerProductoCliente() {
   const { id } = useParams();
@@ -38,32 +41,44 @@ function VerProductoCliente() {
 
       {producto && (
         <div className="flex justify-center mt-8 mb-10">
-          <div className="max-w-md w-full border p-6 rounded-lg shadow-xl bg-blue-100">
-            <h5 className="text-xl font-semibold text-center text-blue-600 mb-4">{producto.title}</h5>
-            <p className="text-black mb-4"><span className="font-semibold">Descripción:</span> {producto.description}</p>
-            <p className="text-black mb-4"><span className="font-semibold">Precio:</span> ${producto.price}</p>
+          <div className=" w-full border-blue-100 p-6 rounded-lg shadow-xl bg-blue-100 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            {/* FUNCION PARA EL RATING */}
+            <div className="md:grid md:grid-cols-2 grid grid-cols-1 gap-5"> 
+              <div className="cols-span-1 p-4">
+                <div className="flex justify-center mt-6"><img src={producto.image} className="w-80 h-80 object-contain rounded shadow" alt={producto.title}/></div>
+
+                 {/* FUNCION PARA EL RATING */}
             {producto.rating && (
-              <p className="text-yellow-700 mb-4">
+              <p className="text-yellow-700 mb-4 text-center mt-4">
                 <span className="font-semibold ">Rating:</span> {renderStars(producto.rating.rate)} ({producto.rating.rate}/5) — {producto.rating.count} opiniones
               </p>
             )}
 
+              </div>
+              <div className="cols-spann-2 ">
+                  <h5 className="text-xl font-semibold  text-sky-600 mb-4">{producto.title}</h5>
+                  <p className="text-black  mb-4 text-justify md:mt-10 "><span className="font-semibold ">Descripción:</span> {producto.description}</p>
+                  <p className="text-sky-700 md:text-xl text-xl mb-4 md:mt-10"><span className="font-semibold">Precio:</span> ${producto.price}</p>
 
-            <div className="flex justify-center mt-6"><img src={producto.image} className="w-48 h-48 object-contain rounded shadow" alt={producto.title}/></div>
+                   {/* Botones de Regresar, Agregar a carrito, Comentar */}
+                  <div className="flex space-x-5 mt-20 mb-4 justify-center">
+                    <a href="/" className=" bg-sky-800 text-white text-center  rounded-md  cursor-pointer hover:bg-sky-700 dark:bg-green-600 dark:focus:ring-blue-800 dark:hover:bg-blue-500 dark:hover:text-white p-2 ">Regresar</a>
+                    <a href="" className="bg-orange-800 text-white text-center  rounded-md  cursor-pointer hover:bg-orange-700 dark:bg-blue-600 dark:focus:ring-orange-800 dark:hover:bg-orange-500 dark:hover:text-white p-2">Agregar a Carrito</a>
+                    <a href="/comentarios" className="bg-green-800 text-white text-center  rounded-md  cursor-pointer hover:bg-green-700 dark:bg-sky-600 dark:focus:ring-orange-800 dark:hover:bg-green-500 dark:hover:text-white p-2">Comentar</a>
+
+                  </div>
+
+              </div>
+            </div>
+
+           
+
+          
           </div>
         </div>
 
     )}
-      {/* Botones de Regresar, Agregar a carrito, Comentar */}
-      <div className="flex space-x-15 mt-4 mb-4 justify-center">
-        <a href="/" className=" bg-blue-800 text-white text-center  rounded-lg  cursor-pointer hover:bg-green-700 dark:bg-blue-600 dark:focus:ring-blue-800 dark:hover:bg-blue-500 dark:hover:text-white p-2 ">Regresar</a>
-        <a href="" className="bg-orange-800 text-white text-center  rounded-lg  cursor-pointer hover:bg-orange-700 dark:bg-orange-600 dark:focus:ring-orange-800 dark:hover:bg-orange-500 dark:hover:text-white p-2">Agregar a Carrito</a>
-        <a href="/comentarios" className="bg-green-800 text-white text-center  rounded-lg  cursor-pointer hover:bg-green-700 dark:bg-green-600 dark:focus:ring-orange-800 dark:hover:bg-green-500 dark:hover:text-white p-2">Comentar</a>
-
-      </div>
-
+     
         {/* Seccion para comentarios */}
       {producto && (
         <div class="flex justify-center bg-white rounded-lg shadow mb-14 p-6">

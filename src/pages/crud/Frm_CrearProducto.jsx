@@ -8,34 +8,45 @@ function CrearProducto(){
     <div className="flex flex-wrap p-10">
         <div className="w-full max-w-md mx-auto">
         <form className="space-y-4 p-10 border border-gray-50  shadow-2xl rounded-md bg-gray-50">
-            <div className="mb-4 ">
-                <label for="nombre" className="font-semibold text-gray-700">Nombre</label>
-                <div className="mt-3">
-                     <input type="text" className=" border border-gray-700  rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 w-[380px] p-2" id="nombre"/>
-                </div>
+            <div className="mb-4">
+                <label htmlFor="nombre" className="block font-semibold text-gray-700 mb-1">Nombre</label>
+                <input 
+                type="text" 
+                className="w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 p-2 sm:p-3"
+                id="nombre"
+                />
             </div>
-             <div className="mb-4 ">
-                <label for="cantidad" className="font-semibold text-gray-700">Cantidad</label>
-                <div className="mt-3">
-                     <input type="text" className=" border border-gray-700  rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 w-[380px]  p-2" id="cantidad"/>
-                </div>
+
+            <div className="mb-4">
+                <label htmlFor="apellido" className="block font-semibold text-gray-700 mb-1">Cantidad</label>
+                <input 
+                type="text" 
+                className="w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 p-2 sm:p-3"
+                id="apellido"
+                />
             </div>
-             <div className="mb-4 ">
-                <label for="precio" className="font-semibold text-gray-700">Precio</label>
-                <div className="mt-3">
-                     <input type="text" className=" border border-gray-700  rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 w-[380px]  p-2" id="precio"/>
-                </div>
+
+            <div className="mb-4">
+                <label htmlFor="correo" className="block font-semibold text-gray-700 mb-1">Precio</label>
+                <input 
+                type="email" 
+                className="w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 p-2 sm:p-3"
+                id="correo"
+                />
             </div>
-             <div className="mb-4 ">
-                <label for="descripcion" className="font-semibold text-gray-700">Descripcion</label>
-                <div className="mt-3">
-                     <textarea type="text" className=" border border-gray-700  rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 w-[380px]  p-2" id="descripcion"/>
-                </div>
+
+            <div className="mb-4">
+                <label htmlFor="dudaSug" className="block font-semibold text-gray-700 mb-1">Descripción</label>
+                <textarea 
+                className="w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-300 p-2 sm:p-3 min-h-[120px]"
+                id="dudaSug"
+                />
             </div>
              
             <div class="flex justify-center space-x-3 gap-4 mt-4">
-                <button type="submit" className="bg-blue-500 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-blue-400">Enviar</button>
+                <button type="submit" className="bg-blue-500 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-blue-400">Agregar</button>
                 <a type="submit" className="bg-red-500 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-red-400 " href="/admin/lista">Cancelar</a>
+                 <a type="submit" className="bg-green-700 px-4 py-2 text-white rounded-md cursor-pointer mb-1 hover:bg-green-600 " href="/admin/lista">Regresar</a>
             </div>
             </form>
         </div>
