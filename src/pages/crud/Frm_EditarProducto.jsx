@@ -1,7 +1,7 @@
 function EditarProducto(){
     return(
          <>
-    <section className=" bg-sky-700 text-white">
+    <section className=" bg-sky-800 text-white">
         <h1 className="text-2xl font-bold  text-center p-7">Editar producto</h1>
      </section>
 

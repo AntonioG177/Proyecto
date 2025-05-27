@@ -18,12 +18,12 @@ function Home() {
       <h1 className="text-3xl sm:text-4xl lg:text-5xl text-white font-extrabold tracking-wide drop-shadow-md">
         ¡Bienvenido a Ctrl+Compras!
       </h1>
-      <a href='#productos'><button className="mt-4 px-6 py-2 bg-green-400 hover:bg-green-500 text-white rounded-full shadow-lg transition-all">
+      <a href='#productos'><button className="mt-4 px-6 py-2 bg-green-600 hover:bg-green-700 text-white rounded-full shadow-lg transition-all cursor-pointer">
         Ver Productos
       </button></a>
       </div>
     </header>
-    <div className='p-6'>
+    <div className='p-6 w-[100%]'>
       <Carousel /> {/* Aquí va el carrusel */}
 
       <section className="bg-gray-100 mt-20 rounded-lg shadow mb-14 hola">
